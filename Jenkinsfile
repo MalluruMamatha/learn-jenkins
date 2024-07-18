@@ -23,7 +23,7 @@
 
 pipeline{
     agent {
-        lable agent-1
+        lable any
     }
     options{
         timeout(time:30,unit:'MINUTS')

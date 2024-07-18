@@ -38,20 +38,20 @@ pipeline{
 
     stages{
 
-        stage(init)
+        stage('init')
             steps{
 
                 sh 'echo This is from init'
 
             }
-            stage(plan)
-            steps{
+            stage('plan')
+                steps{
 
                 sh 'echo This is from plan'
 
             }
-            stage(iapply)
-            steps{
+            stage('iapply')
+                steps{
 
                 sh 'echo This is from apply'
 

@@ -33,6 +33,7 @@ pipeline{
     }
     environment{
         Greetings = "Good Morning"  // environments are like variables....key value pairs
+    }
 
     parameters{
         text(name: 'BIOGRAPHY', defaultValue: '', description: 'Enter some information about the person')
@@ -85,6 +86,6 @@ pipeline{
         }
     }
 }
-}
+
 
 

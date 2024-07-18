@@ -23,17 +23,17 @@
 
 pipeline{
     agent {
-        lable any
+        lable 'AGENT-1'
     }
     options{
-        timeout(time:30,unit:'MINUTS')
+        timeout(time: 30, unit: 'MINUTS')
     }
     environment{
         Greetings = "Good Morning"
     }
 
     parameters{
-
+        text(name: 'BIOGRAPHY', defaultValue: '', description: 'Enter some information about the person')
     }
 
     stages{

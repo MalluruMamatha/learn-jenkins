@@ -37,6 +37,7 @@ pipeline{
 
     parameters{
         text(name: 'BIOGRAPHY', defaultValue: '', description: 'Enter some information about the person')
+        booleanParam(name: 'TOGGLE', defaultValue: true, description: 'Toggle this value')
     }
 
     stages{

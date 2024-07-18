@@ -66,7 +66,7 @@ pipeline{
             stage('destroy'){
                 steps{
 
-                sh 'echo This is from apply'
+                sh 'echo This is from destroy'
                 }
             }
     }

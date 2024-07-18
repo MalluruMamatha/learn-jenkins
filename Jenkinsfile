@@ -27,6 +27,7 @@ pipeline{
     }
     options{
         timeout(time: 2, unit: 'SECONDS')
+       
     }
     environment{
         Greetings = "Good Morning"

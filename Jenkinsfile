@@ -26,7 +26,7 @@ pipeline{
         label 'AGENT-1'
     }
     options{
-        timeout(time: 30, unit: 'MINUTES')
+        timeout(time: 2, unit: 'SECONDS')
     }
     environment{
         Greetings = "Good Morning"
@@ -52,7 +52,7 @@ pipeline{
 
             }
             }
-            stage('iapply'){
+            stage('apply'){
                 steps{
 
                 sh 'echo This is from apply'

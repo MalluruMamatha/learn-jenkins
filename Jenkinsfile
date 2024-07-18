@@ -23,10 +23,10 @@
 
 pipeline{
     agent {
-        lable 'AGENT-1'
+        label 'AGENT-1'
     }
     options{
-        timeout(time: 30, unit: 'MINUTS')
+        timeout(time: 30, unit: 'MINUTES')
     }
     environment{
         Greetings = "Good Morning"
